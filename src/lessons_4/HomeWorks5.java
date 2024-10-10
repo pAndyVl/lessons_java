@@ -20,12 +20,16 @@ package lessons_4;
 public class HomeWorks5 {
     public static void main(String[] args) {
         int count = 1;
-        while (count <= 100){
-            for (int i = 1; i <= 10; i++){
-                System.out.print(count + " ");
-                count = count + 1;
+        int count2 = 1;
+
+        while (count <= 10){
+            while (count2 <= 10){
+                System.out.print((count * count2++) + " ");
             }
-            System.out.println();
+            count++; // следующая строка начинается уже
+            // с двойки и так далее
+            count2=1; //сбрасываем на единицу
+            System.out.println(); //переход на следующую строку
         }
     }
 }
